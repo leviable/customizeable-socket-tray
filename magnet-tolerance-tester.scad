@@ -10,9 +10,11 @@ magnet_height = 2.8;
 printing_tolerance = .1;
 
 nozzle_width = 0.4;
+// multiples of nozzle_width
+exterior_margin = 3;
 
 /* [Hidden] */
-margin = 1;
+margin = nozzle_width * exterior_margin;
 midplane = (magnet_height+margin*2)/2;
 
 //if(print_preview) back_half();
